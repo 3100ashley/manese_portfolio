@@ -34,7 +34,7 @@ export default function NavBar(props) {
                   <div className="flex flex-shrink-0 items-center font-mono font-bold tracking-widest text-2xl text-brown h-8 w-auto">
                    <a href="/">ASHLEY</a> 
                   </div>
-                  <div className="hidden sm:ml-6 sm:block font-mono">
+                  <div className="hidden sm:ml-6 sm:block font-mono ">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
                         <NavLink
@@ -42,7 +42,7 @@ export default function NavBar(props) {
                           to={item.href}
                           className={({isActive}) => {
                            return "rounded-md px-3 py-2 text-md font-medium" + 
-                           (isActive ? "text-white bg-purple-300" : "text-purple-400 hover:text-white")
+                           (isActive ? "text-white text-white bg-purple-300 shadow-lg shadow-purple-300/50 border border-white" : "text-purple-400 hover:text-white")
                           }}
           
                         >
